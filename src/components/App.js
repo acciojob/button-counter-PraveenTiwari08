@@ -1,11 +1,17 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const [counter, setcounter] = useState(0)
+  Increase = () =>{
+    setcounter(counter+1);
+  }
   return (
     <div>
-        {/* Do not remove the main div */}
+        { <><h1>Counter </h1>
+        <p>{counter}</p>
+        <button onClick={Increase}>Increase</button></>}
     </div>
   )
 }
