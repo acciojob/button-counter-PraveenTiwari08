@@ -4,7 +4,7 @@ import './../styles/App.css';
 
 const App = () => {
   const [counter, setcounter] = useState(0)
-  Increase = () =>{
+  const Increase = () =>{
     setcounter(counter+1);
   }
   return (
